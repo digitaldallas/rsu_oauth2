@@ -10,8 +10,7 @@ A Python library for authenticating with the [RunSignUp API](https://runsignup.c
 |---|---|
 | `rsu_oauth2.py` | `RunSignUpOAuth2` class — handles the full OAuth2 lifecycle |
 | `rsu_api.py` | `RSU` class — typed wrappers around RunSignUp REST endpoints |
-| `client_config.json` | Credentials and stored tokens (keep this file private) |
-| `test_rsu_oauth2.py` | Unit test suite (52 tests, no network required) |
+| `client_config_sample.json` | A sample of how credentials and tokens are stored |
 | `rsu_api_oauth2_test.py` | End-to-end usage example |
 
 ---
