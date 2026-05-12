@@ -178,32 +178,6 @@ All methods call the internal `rsu.get(endpoint, params)` which automatically at
 
 ---
 
-## Running the tests
-
-### Unit tests (no network, no browser)
-
-```bash
-python -m unittest test_rsu_oauth2 -v
-```
-
-52 tests covering config loading, URL construction, PKCE math, token exchange, token refresh, expiry logic, auto-refresh, header format, config persistence, and error handling.
-
-### Live integration tests (browser required)
-
-```powershell
-# PowerShell
-$env:RSU_INTEGRATION=1; python -m unittest test_rsu_oauth2.TestLiveOAuth2 -v
-```
-
-```bash
-# bash
-RSU_INTEGRATION=1 python -m unittest test_rsu_oauth2.TestLiveOAuth2 -v
-```
-
-The four live tests exercise the complete real-world flow against the RunSignUp servers.
-
----
-
 ## Reference
 
 - [RunSignUp OAuth2 Developer Guide](https://runsignup.com/Profile/OAuth2/DeveloperGuide)
